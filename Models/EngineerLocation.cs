@@ -10,9 +10,20 @@ namespace tracking.Models
 
         public string FLongitude { get; set; }
 
-        public string EngineerName { get; set; }
+        public string FullName { get; set; }
 
-        public string ServicePointName { get; set; }
+        public string UserName { get; set; }
 
+    }
+
+    public class Airport{
+        public string Name { get; set; }
+        public string Code { get; set; }
+        public string Latitude { get; set; }
+        public string Longitude { get; set; }
+
+public string City { get; set; }
+        public string Country { get; set; }
+        
     }
 }

@@ -21,7 +21,7 @@ namespace tracking.Models
 	,UserName
 	,FullName
 from USER_LOCATION gps
- where ftime between '2018-08-01' and '2018-08-02' and UserName=@userName", new {userName});
+ where UserName=@userName", new {userName});
 
            if(data != null)
                 return data;
