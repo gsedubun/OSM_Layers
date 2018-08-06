@@ -2,7 +2,6 @@
     ViewData["Title"] = "Map";
 }
 <h2>@ViewData["Title"]</h2>
-<!-- <p>@ViewData["Message"]</p> -->
 @section HeadScripts{
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
@@ -63,7 +62,7 @@
                         polyLines.push([element.latitude, element.longitude]);
 
                         if(index===0){
-                            mymap.center = [element.latitude, element.longitude];// (center: [element.fLatitude, element.fLongitude], zoom:13);
+                            mymap.center = [element.latitude, element.longitude];
                         }
                     }
                   
